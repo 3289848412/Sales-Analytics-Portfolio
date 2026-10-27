@@ -13,6 +13,7 @@ scripts = [
     ("高阶改造：数据清洗(制造脏数据→清洗)", "src/data_cleaning.py"),
     ("高阶改造：基于清洗数据重建库", "src/build_db_clean.py"),
     ("高阶改造：生成动态Plotly报告", "src/enhanced_viz.py"),
+    ("高阶改造：执行SQL窗口函数分析", "src/advanced_analysis.py"),
 ]
 
 for name, script in scripts:
@@ -27,6 +28,7 @@ print("\n" + "=" * 50)
 print("全部完成！请查看以下产出：")
 print("   静态图: outputs/basic_report.png")
 print("   动态看板: outputs/interactive_report.html")
+print("   窗口函数结果: outputs/monthly_product_rank.csv | outputs/monthly_growth.csv")
 print("   原始库: data/sales.db  |  清洗库: data/sales_clean.db")
 print("   脏数据: data/raw/sales_raw.csv  |  清洗后: data/processed/")
 print("=" * 50)
